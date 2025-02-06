@@ -1,0 +1,117 @@
+.weather-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  height: 85vh;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 90%;
+  margin-top: 20px; /* Adds a bit of space between the button and the weather info */
+}
+
+.weather-container input {
+  padding: 12px;
+  width: 280px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.weather-container input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.weather-container button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weather-container button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.weather-info {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 450px;
+}
+
+.weather-info h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.weather-info p {
+  font-size: 18px;
+  color: #333;
+}
+
+.weather-info p span {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .weather-container input {
+    width: 80%;
+  }
+
+  .weather-container button {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .weather-info h3 {
+    font-size: 22px;
+  }
+
+  .weather-info p {
+    font-size: 16px;
+  }
+}
+
+.weather-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.weather-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather-info p {
+  font-size: 18px;
+  color: #333;
+}
